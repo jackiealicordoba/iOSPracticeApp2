@@ -40,8 +40,8 @@
 
 -(UIColor *)rgbColorFromDictionary:(NSDictionary *)colorDictionary; {
     CGFloat red = [[colorDictionary objectForKey:@"red"] doubleValue];
-    CGFloat blue = [[colorDictionary objectForKey:@"green"] doubleValue];
-    CGFloat green = [[colorDictionary objectForKey:@"blue"] doubleValue];
+    CGFloat blue = [[colorDictionary objectForKey:@"blue"] doubleValue];
+    CGFloat green = [[colorDictionary objectForKey:@"green"] doubleValue];
     CGFloat alpha = [[colorDictionary objectForKey:@"alpha"] doubleValue];
     
     return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha];
