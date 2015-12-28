@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-1b-sCY">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-1b-sCY">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -45,6 +45,7 @@
                     <navigationItem key="navigationItem" title="Playlists" id="n9q-NU-njo"/>
                     <connections>
                         <outlet property="aButton" destination="tlF-Jj-EVk" id="5eQ-MC-qZo"/>
+                        <outlet property="playlistImageView0" destination="vWo-1b-sCY" id="88J-Mx-MIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,6 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee" width="53" height="107"/>
+        <image name="placeholder" width="66" height="73"/>
     </resources>
 </document>
