@@ -20,7 +20,7 @@
     [super viewDidLoad];
     [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
     
-    Playlist *playlist = [[Playlist alloc] initWithIndex:4];
+    Playlist *playlist = [[Playlist alloc] initWithIndex:1];
     self.playlistImageView0.image = playlist.playlistIcon;
     self.playlistImageView0.backgroundColor = playlist.backgroundColor;
     
@@ -34,7 +34,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
         PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailController.segueLabelText = @"You pressed the button!";
+        
+        playlistDetailController.currentPlaylist = [[Playlist alloc] initWithIndex:1];
     }
 }
 

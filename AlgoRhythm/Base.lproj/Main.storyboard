@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9x7-3t-clH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -34,7 +35,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.22519349895025553" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vWo-1b-sCY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IZ5-KM-u4M"/>
                             <constraint firstItem="tlF-Jj-EVk" firstAttribute="top" secondItem="vWo-1b-sCY" secondAttribute="bottom" constant="8" id="XAP-7c-RxM"/>
@@ -50,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="342"/>
+            <point key="canvasLocation" x="780" y="342"/>
         </scene>
         <!--Artists-->
         <scene sceneID="vhY-As-k1m">
@@ -64,22 +65,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpc-XA-dUv">
-                                <rect key="frame" x="39" y="273.5" width="243" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2QP-gy-uRI">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2QP-gy-uRI" secondAttribute="height" multiplier="32:29" id="uUA-Pr-6fk"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-cC-z6S">
+                                <rect key="frame" x="0.0" y="264" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0w-LR-03U">
+                                        <rect key="frame" x="20" y="10" width="118.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-Nt-Uqf">
+                                        <rect key="frame" x="20" y="38.5" width="280" height="42.5"/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dPq-cC-z6S" secondAttribute="height" multiplier="32:9" id="6Oz-6W-emk"/>
+                                    <constraint firstItem="0xI-Nt-Uqf" firstAttribute="leading" secondItem="dPq-cC-z6S" secondAttribute="leading" constant="20" id="Wvx-lG-9o6"/>
+                                    <constraint firstAttribute="trailing" secondItem="0xI-Nt-Uqf" secondAttribute="trailing" constant="20" id="jWf-gK-vOD"/>
+                                    <constraint firstItem="H0w-LR-03U" firstAttribute="top" secondItem="dPq-cC-z6S" secondAttribute="top" constant="10" id="py3-ZA-Ret"/>
+                                    <constraint firstItem="H0w-LR-03U" firstAttribute="leading" secondItem="dPq-cC-z6S" secondAttribute="leading" constant="20" id="t3J-r8-DpW"/>
+                                    <constraint firstItem="0xI-Nt-Uqf" firstAttribute="top" secondItem="H0w-LR-03U" secondAttribute="bottom" constant="8" id="udp-Lb-JJZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.99531973375183835" green="1" blue="0.94314588083940054" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Zpc-XA-dUv" firstAttribute="centerX" secondItem="Dwg-dD-XNG" secondAttribute="centerX" id="1kF-G4-mQF"/>
-                            <constraint firstItem="Zpc-XA-dUv" firstAttribute="centerY" secondItem="Dwg-dD-XNG" secondAttribute="centerY" id="III-Yc-mEl"/>
+                            <constraint firstItem="2QP-gy-uRI" firstAttribute="leading" secondItem="Dwg-dD-XNG" secondAttribute="leading" id="Ev9-bZ-u82"/>
+                            <constraint firstItem="2QP-gy-uRI" firstAttribute="top" secondItem="hzX-5p-Tsd" secondAttribute="bottom" id="WAx-Is-5uZ"/>
+                            <constraint firstItem="dPq-cC-z6S" firstAttribute="leading" secondItem="Dwg-dD-XNG" secondAttribute="leading" id="Y2h-7D-StI"/>
+                            <constraint firstItem="dPq-cC-z6S" firstAttribute="leading" secondItem="Dwg-dD-XNG" secondAttribute="leading" id="YHQ-1G-q6J"/>
+                            <constraint firstAttribute="trailing" secondItem="dPq-cC-z6S" secondAttribute="trailing" id="baz-ws-Zxy"/>
+                            <constraint firstAttribute="trailing" secondItem="dPq-cC-z6S" secondAttribute="trailing" id="ehc-xl-lBJ"/>
+                            <constraint firstItem="dPq-cC-z6S" firstAttribute="bottom" secondItem="2QP-gy-uRI" secondAttribute="bottom" id="iUQ-yW-JiA"/>
+                            <constraint firstItem="dPq-cC-z6S" firstAttribute="leading" secondItem="Dwg-dD-XNG" secondAttribute="leading" id="kGi-q1-Nea"/>
+                            <constraint firstAttribute="trailing" secondItem="dPq-cC-z6S" secondAttribute="trailing" id="uRz-rH-CCa"/>
+                            <constraint firstAttribute="trailing" secondItem="2QP-gy-uRI" secondAttribute="trailing" id="zTy-y0-pXg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="kVT-Yw-dvR"/>
                     <connections>
-                        <outlet property="buttonPressLabel" destination="Zpc-XA-dUv" id="Ato-Zn-JFH"/>
+                        <outlet property="playlistCoverImage" destination="2QP-gy-uRI" id="iU2-yC-DL6"/>
+                        <outlet property="playlistDescription" destination="0xI-Nt-Uqf" id="fTp-Ct-ZdL"/>
+                        <outlet property="playlistTitle" destination="H0w-LR-03U" id="Yj1-do-ORy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tch-gi-sxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,9 +129,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9x7-3t-clH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jd6-xK-xjH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Jd6-xK-xjH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

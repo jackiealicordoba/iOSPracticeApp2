@@ -7,6 +7,7 @@
 //
 
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistDetailViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonPressLabel.text = self.segueLabelText;
+    if (self.currentPlaylist) {
+        self.playlistTitle.text = self.currentPlaylist.playlistTitle;
+        self.playlistDescription.text = self.currentPlaylist.playlistDescription;
+        
+        self.playlistCoverImage.image = self.currentPlaylist.playlistIconLarge;
+        self.playlistCoverImage.backgroundColor = self.currentPlaylist.backgroundColor;
+    }    
 }
 
 - (void)didReceiveMemoryWarning {
