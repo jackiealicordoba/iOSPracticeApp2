@@ -18,8 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
-    
+
     Playlist *playlist = [[Playlist alloc] initWithIndex:1];
     self.playlistImageView0.image = playlist.playlistIcon;
     self.playlistImageView0.backgroundColor = playlist.backgroundColor;
@@ -37,6 +36,10 @@
         
         playlistDetailController.currentPlaylist = [[Playlist alloc] initWithIndex:1];
     }
+}
+
+- (IBAction)showPlaylistDetail:(id)sender {
+    [self performSegueWithIdentifier:@"showPlaylistDetail" sender:sender];
 }
 
 @end
