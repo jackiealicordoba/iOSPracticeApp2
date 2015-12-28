@@ -7,6 +7,7 @@
 //
 
 #import "PlaylistMasterViewController.h"
+#import "PlaylistDetailViewController.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -24,6 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
+        PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
+        playlistDetailController.segueLabelText = @"You pressed the button!";
+    }
+}
 
 @end

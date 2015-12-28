@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A2BF1421C307670003BABF6 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2BF1411C307670003BABF6 /* PlaylistDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4A2BF1451C31019D003BABF6 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2BF1441C31019D003BABF6 /* MusicLibrary.m */; settings = {ASSET_TAGS = (); }; };
 		4AE2408C1C3061FB0085E304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2408B1C3061FB0085E304 /* main.m */; };
 		4AE2408F1C3061FB0085E304 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2408E1C3061FB0085E304 /* AppDelegate.m */; };
 		4AE240921C3061FB0085E304 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE240911C3061FB0085E304 /* PlaylistMasterViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		4A2BF1401C307670003BABF6 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
 		4A2BF1411C307670003BABF6 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		4A2BF1431C31019D003BABF6 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		4A2BF1441C31019D003BABF6 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
 		4AE240871C3061FB0085E304 /* AlgoRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE2408B1C3061FB0085E304 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AE2408D1C3061FB0085E304 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				4AE240911C3061FB0085E304 /* PlaylistMasterViewController.m */,
 				4A2BF1401C307670003BABF6 /* PlaylistDetailViewController.h */,
 				4A2BF1411C307670003BABF6 /* PlaylistDetailViewController.m */,
+				4A2BF1431C31019D003BABF6 /* MusicLibrary.h */,
+				4A2BF1441C31019D003BABF6 /* MusicLibrary.m */,
 				4AE240931C3061FB0085E304 /* Main.storyboard */,
 				4AE240961C3061FB0085E304 /* Assets.xcassets */,
 				4AE240981C3061FB0085E304 /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				4A2BF1421C307670003BABF6 /* PlaylistDetailViewController.m in Sources */,
 				4AE2408F1C3061FB0085E304 /* AppDelegate.m in Sources */,
 				4AE2408C1C3061FB0085E304 /* main.m in Sources */,
+				4A2BF1451C31019D003BABF6 /* MusicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
