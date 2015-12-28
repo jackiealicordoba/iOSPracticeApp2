@@ -24,6 +24,12 @@
         
         self.playlistCoverImage.image = self.currentPlaylist.playlistIconLarge;
         self.playlistCoverImage.backgroundColor = self.currentPlaylist.backgroundColor;
+        
+        self.playlistArtist0.text = [self.currentPlaylist.artists objectAtIndex:0];
+        self.playlistArtist1.text = [self.currentPlaylist.artists objectAtIndex:1];
+        self.playlistArtist2.text = [self.currentPlaylist.artists objectAtIndex:2];
+        self.playlistArtist3.text = [self.currentPlaylist.artists objectAtIndex:5];
+        self.playlistArtist4.text = [self.currentPlaylist.artists objectAtIndex:4];
     }    
 }
 
